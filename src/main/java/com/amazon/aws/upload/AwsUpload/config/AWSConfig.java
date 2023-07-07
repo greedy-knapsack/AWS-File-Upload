@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 public class AWSConfig {
     @Bean
     public AmazonS3 s3(){
-        AWSCredentials awsCredentials = new BasicAWSCredentials("AKIASXI7HC6AGMSCUYX2",
-                "kk7fGJqA8YKFj3mRFRA/M4KFxnLS9c6BI8jDBQG3");
+        AWSCredentials awsCredentials = new BasicAWSCredentials("Your Access Key",
+                "Your Private Key");
         return AmazonS3ClientBuilder.standard()
                 .withRegion("ap-south-1")
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
